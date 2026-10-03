@@ -1,0 +1,48 @@
+.services-main-container {
+    padding: 60px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    background: linear-gradient(rgb(0, 24, 13), rgb(0, 36, 13) 30%);
+}
+
+.services-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    @media (width > 576px) {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 20px;
+    }
+}
+
+.services-main-container h2 {
+    color: white;
+}
+.service {
+    padding-bottom: 5px;
+    border-bottom: solid 2px rgba(153, 224, 188, 0.251);
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+}
+.service h3 {
+    color: white;
+}
+.service p {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(186, 184, 184);
+    @media (width > 576px) {
+        font-size: 15px;
+    }
+}
+
+.services-main-container a {
+    color: rgb(0, 77, 0);
+    border-color: white;
+    background-color: white;
+    font-weight: 700;
+}

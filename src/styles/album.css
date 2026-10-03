@@ -1,0 +1,69 @@
+.album-main-container {
+    padding: 80px 8% 60px 8%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: rgba(222, 220, 220, 0.297);
+    width: 100%;
+    box-sizing: border-box;
+    @media (width > 576px) {
+        padding: 20px 5% 60px 5%;
+    }
+}
+
+.album-container {
+    display: grid;
+    grid-template-areas: "one one" "two three" "four four";
+    gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    @media (width > 576px) {
+        grid-template-areas: 
+            "one one two three" 
+            "one one four four" 
+        ;
+    }
+}
+.album-main-container h2 {
+    color: rgb(1, 110, 1);
+}
+
+.one {
+    grid-area: one;
+    background: linear-gradient(145deg, rgb(0, 96, 0), rgb(1, 36, 1));
+    @media (width > 576px) {
+        min-height: 100%;
+    }
+}
+.two {
+    grid-area: two;
+    background: linear-gradient(145deg, rgb(168, 1, 1), rgb(15, 0, 0));
+}
+.three {
+    grid-area: three;
+    background: linear-gradient(145deg, rgb(218, 218, 218), rgb(150, 150, 149));
+}
+.four {
+    grid-area: four;
+    background: linear-gradient(145deg, rgb(28, 0, 63), rgb(2, 0, 10));
+}
+
+.one, .two, .three, .four {
+    min-width: 70px;
+    position: relative;
+}
+.two, .three {
+    height: 150px;
+} 
+.one, .four {
+    height: 150px;
+} 
+
+.album-container span {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+}
