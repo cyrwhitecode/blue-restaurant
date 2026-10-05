@@ -22,7 +22,7 @@
     color: white;
 }
 .service {
-    padding-bottom: 5px;
+    padding: 10px 0 5px 0;
     border-bottom: solid 2px rgba(153, 224, 188, 0.251);
     display: flex;
     flex-direction: column;

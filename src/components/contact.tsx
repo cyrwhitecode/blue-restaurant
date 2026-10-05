@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {  adress2, phone, text } from "../elements/contact";
 import '../styles/contact.css'
 import { whatsapp } from "../elements/whatsapp";
@@ -13,21 +13,24 @@ export function Contact () {
     const [hour, setHour] = useState<string>("")
     const [places, setPlaces] = useState<string>("")
     const [error, setError] = useState<string>("")
-    const [msg, setMsg] = useState<string>("")
+    const message = `Bonjour, je m'appelle ${name}, \n Mon numero est le ${clientPhone.replaceAll(" ", "")}.\n\n Je souhaite reserver une table pour ${places} personne(s) le ${date} a ${hour}.\n Merci et bonne journee.`
+
 
     const handleSubmit = (e: SyntheticEvent) => {
         e.preventDefault();
-        if (name==="" || date==="" || phone==="" || hour==="" || places==="") {
+        if (!name || !date || !phone || !hour || !places) {
             setError("Veillez remplir tous les champs correctement !!")
-        } else {
-            setMsg(`Bonjour, je m'appelle ${name}, mon numero est le ${clientPhone.replaceAll(" ", "")}.\n Je souhaite reserver une table pour ${places} personne(s) le ${date} a ${hour}.\n Merci et bonne journee.`)
-            setError("");
-        }
+            return
+        } 
+        window.open(whatsapp(Number(phone), message), "_blank")
+        setName("");
+        setClientPhone("");
+        setDate("");
+        setHour("");
+        setPlaces("");
+        setError("");
     }
 
-    const blockLink = () => {
-        return name==="" || date==="" || phone==="" || hour==="" || places===""? "block": "activate"
-    }
 
     return (
         <div className="contact-container">
@@ -62,15 +65,7 @@ export function Contact () {
                         </select>
                     </label>
                 </div>
-                <button>
-                    <a 
-                        className={blockLink()} 
-                        href={whatsapp(Number(phone), msg)}
-                        target='_blank'
-                        rel='noopener noreferrer'>
-                            Confirmer la reservation
-                    </a>
-                </button>
+                <button type="submit">Confirmer la reservation</button>
                 <div className="error-container">
                     {error === ""? null: (<span>{error}</span>)}
                 </div>

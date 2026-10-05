@@ -53,6 +53,7 @@
     background-color: rgb(219, 0, 0);
     border: none;
     transition: 0.3s ease-in-out;
+    color: white;
 }
 
 .dishes {

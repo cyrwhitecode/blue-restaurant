@@ -27,6 +27,9 @@
 
 .footer-infos {
     margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
 }
 
 .footer-container h3 {
@@ -37,7 +40,6 @@
 
 .footer-links {
     display: flex;
-    flex-direction: column;
     margin-bottom: 20px;
     gap: 5px;
     @media (width > 576px) {
@@ -47,7 +49,7 @@
 .footer-links a {
     text-decoration: none;
     color: rgb(105, 100, 100);
-    font-size: 16px;
+    font-size: 13px;
     @media (width > 576px) {
         font-size: 13px;
     }
@@ -78,5 +80,7 @@
 }
 .end-bloc p {
     font-size: 13px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
 }
 
