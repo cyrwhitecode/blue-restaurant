@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import {  adress2, phone, text } from "../elements/contact";
 import '../styles/contact.css'
 import { whatsapp } from "../elements/whatsapp";
