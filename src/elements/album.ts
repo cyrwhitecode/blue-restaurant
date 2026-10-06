@@ -7,3 +7,5 @@ export const album = [
     {title: "personal", photo: "/citydiet_img/convivial1.jpg"},
     {title: "event", photo: "/citydiet_img/celebrations.jpg"}
 ]
+
+export const albumDescription = "Découvrez les différents espaces et moments qui font vivre notre établissement."

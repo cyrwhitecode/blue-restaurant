@@ -23,10 +23,13 @@
 }
 .service {
     padding: 10px 0 5px 0;
-    border-bottom: solid 2px rgba(153, 224, 188, 0.251);
+    border-bottom: solid 1px rgba(125, 125, 125, 0.1);
     display: flex;
     flex-direction: column;
     gap: 0px;
+    @media (width > 576px) {
+        border-bottom: solid 2px rgba(125, 125, 125, 0.1);
+    }
 }
 .service h3 {
     color: white;

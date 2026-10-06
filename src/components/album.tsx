@@ -1,10 +1,12 @@
 import '../styles/album.css'
+import { albumDescription } from '../elements/album'
 
 export function Album () {
 
     return (
         <div className="album-main-container">
             <h2>Album</h2>
+            <p className='album-description'>{albumDescription}</p>
             <div className="album-container">
                 <div className="one"><span>La Salle</span></div>
                 <div className="two"><span>La bar</span></div>

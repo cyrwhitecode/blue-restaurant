@@ -2,12 +2,12 @@
     padding: 80px 8% 60px 8%;
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 20px;
     background: rgba(222, 220, 220, 0.297);
     width: 100%;
     box-sizing: border-box;
     @media (width > 576px) {
-        padding: 20px 5% 60px 5%;
+        padding: 70px 5% 60px 5%;
     }
 }
 
@@ -26,6 +26,15 @@
 }
 .album-main-container h2 {
     color: rgb(1, 110, 1);
+}
+
+.album-main-container p {
+    font-style: italic;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 77, 0);
+    @media (width > 576px) {
+        font-size: 15px;
+    }
 }
 
 .one {

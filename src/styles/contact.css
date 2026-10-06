@@ -106,7 +106,9 @@ option { color: gray; }
 .form button {
     position: relative;
     margin-top: 20px;
-    background-color: rgb(186, 2, 39);
+    background-color: rgb(217, 0, 43);
+    color: white;
+    font-weight: 700;
     width: 170px;
     height: 40px;
     border-radius: 10px;
