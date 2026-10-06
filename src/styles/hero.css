@@ -6,7 +6,6 @@
     width: 100%;
     box-sizing: border-box;
     @media (width > 576px) {
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
@@ -32,7 +31,8 @@
     bottom: 10px;
     left: 30px;
 }
-.craft .craft-elt p, h2 {
+.craft .craft-elt p,
+.craft .craft-elt h2 {
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     color: white;
@@ -42,15 +42,6 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.resto-hero {
-    position: absolute;
-    padding: 30px;
-    background-color: rgba(202, 242, 222, 0.747);
-    top: 35px;
-    left: calc(50% - 136px);
-    border-radius: 50%;
 }
 
 .mark-hero {

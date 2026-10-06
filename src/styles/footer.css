@@ -42,17 +42,11 @@
     display: flex;
     margin-bottom: 20px;
     gap: 5px;
-    @media (width > 576px) {
-        flex-direction: row;
-    }
 }
 .footer-links a {
     text-decoration: none;
     color: rgb(105, 100, 100);
     font-size: 13px;
-    @media (width > 576px) {
-        font-size: 13px;
-    }
 }
 
 .mark p {
@@ -65,10 +59,6 @@
 .footer-contact {
     font-style: italic;
 }
-.footer-contact .phone {
-    font-weight: 700;
-}
-
 .end-bloc {
     margin-top: 30px;
     padding: 20px 0 30px 0;
@@ -83,4 +73,3 @@
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
 }
-

@@ -7,7 +7,7 @@ import { Specialities } from '../components/specialities';
 import { Contact } from '../components/contact';
 import { whatsapp } from '../elements/whatsapp';
 import { Album } from '../components/album';
-import { phone } from '../elements/contact';
+import { phone } from '../elements/data';
 
 export function Home () {
 
@@ -42,4 +42,3 @@ export function Home () {
         </div>
     )
 }
-

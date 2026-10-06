@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {  adress2, phone, phone2, text } from "../elements/contact";
+import {  adress2, phone, phone2, text } from "../elements/data";
 import '../styles/contact.css'
 import { whatsapp } from "../elements/whatsapp";
 import type { SyntheticEvent } from "react";
@@ -57,6 +57,8 @@ export function Contact () {
                     <label>Heure <input value={hour} onChange={(e) => setHour(e.target.value)} type="time" placeholder="Heure de passage" /></label>
                     <label>Places 
                         <select onChange={(e) => setPlaces(e.target.value)}>
+                            <option selected>Selectionner</option>
+                            <option value="1">1 personne</option>
                             <option value="2">2 personnes</option>
                             <option value="3">3 personnes</option>
                             <option value="4">4 personnes</option>

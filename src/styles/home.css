@@ -8,17 +8,14 @@
 
 #album {
     width: 100%;
-    box-sizing: border-box;
 }
 
 #specialities {
     width: 100%;
-    box-sizing: border-box;
 }
 
 #whatsApp {
     position: fixed;
-    background-color: rgba(128, 128, 128, 0);
     top: 0;
     right: 0;
     bottom: 0;
@@ -39,7 +36,6 @@
     animation: pulse 2s infinite;
     cursor: pointer;
     pointer-events: auto;
-    z-index: 10;
 }
 
 @keyframes pulse {

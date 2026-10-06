@@ -1,4 +1,4 @@
-import { presentation1, presentation2, welcome } from "../elements/about";
+import { presentation1, presentation2, welcome } from "../elements/data";
 import '../styles/about.css'
 
 export function About () {

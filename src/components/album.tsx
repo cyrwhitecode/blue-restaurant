@@ -1,5 +1,5 @@
 import '../styles/album.css'
-import { albumDescription } from '../elements/album'
+import { albumDescription } from '../elements/data'
 
 export function Album () {
 

@@ -97,8 +97,21 @@ label input, select {
     color: white;
     font-size: 14px;
 }
+.form-input input[type="date"],
+.form-input input[type="time"] {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 40px;
+    box-sizing: border-box;
+}
 label input:focus, select:focus {
     box-shadow: 0 0 3px white;
+}
+label input:focus-visible, select:focus-visible,
+.form button:focus-visible {
+    outline: 2px solid white;
+    outline-offset: 2px;
 }
 label input:hover, select:hover {
     box-shadow: 0 0 3px white;
@@ -106,7 +119,6 @@ label input:hover, select:hover {
 
 option { color: gray; }
 .form button {
-    position: relative;
     margin-top: 20px;
     background-color: rgb(217, 0, 43);
     color: white;

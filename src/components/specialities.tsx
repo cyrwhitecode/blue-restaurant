@@ -1,4 +1,4 @@
-import { Dessert, Grillade, Shawarma } from "../elements/speciality";
+import { Dessert, Grillade, Shawarma } from "../elements/data";
 import type { specialityType } from "../elements/types";
 import '../styles/specialities.css'
 import { useState } from "react";

@@ -1,5 +1,5 @@
-import { town, phone, adress, email } from "../elements/contact"
-import { restaurantName } from "../elements/hero"
+import { town, phone, adress, email } from "../elements/data"
+import { restaurantName } from "../elements/data"
 import '../styles/footer.css'
 
 export const Footer = () => {

@@ -1,7 +1,5 @@
 body {
-    box-sizing: border-box;
     overflow-x: hidden;
-    width: 100%;
 }
 
 .header-container {
@@ -10,7 +8,6 @@ body {
     align-items: center;
     padding: 17px 20px;
     width: 100%;
-    box-sizing: border-box;
     position: relative;
     isolation: isolate;
 }
@@ -87,6 +84,20 @@ body {
     }
 }
 
+@media (width > 576px) and (width <= 850px) {
+    .desk-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        display: flex;
+    }
+
+    .mobile-links {
+        display: flex;
+    }
+}
+
 .header-container a {
     color: black;
     text-decoration: none;
@@ -126,6 +137,12 @@ body {
     @media ( width > 1024px ) {
         display: none;
     }
+}
+
+.menu-btn:focus-visible,
+.header-container a:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
 }
 
 .open-menu {

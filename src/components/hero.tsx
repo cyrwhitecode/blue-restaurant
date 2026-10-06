@@ -1,4 +1,4 @@
-import { contactBtnText, servBtnText, slogan } from "../elements/hero"
+import { contactBtnText, servBtnText, slogan } from "../elements/data"
 import '../styles/hero.css'
 
 export function Hero () {

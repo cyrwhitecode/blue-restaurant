@@ -1,5 +1,4 @@
-import { essentialServices } from "../elements/services";
-import { contactBtnText } from "../elements/hero";
+import { essentialServices, contactBtnText } from "../elements/data";
 import '../styles/service.css'
 
 export function Service () {
