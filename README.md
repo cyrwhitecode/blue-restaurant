@@ -1,32 +1,39 @@
-# React + TypeScript + Vite
+# City Diet
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Site vitrine pour un restaurant local à Yaoundé, conçu pour présenter l’établissement, ses services, ses spécialités et faciliter les réservations via WhatsApp.
 
-Currently, two official plugins are available:
+## Démo
+Lien de la demo:(demo-netlify)[https://citydiet.netlify.app]
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologie
+- React 19
+- TypeScript
+- Vite 8
+- CSS personnalisé
+- Git
 
-## React Compiler
+## Fonctionnalités
+- page d’accueil avec slogan et appels à l’action
+- présentation du restaurant
+- section services
+- galerie photo
+- spécialités avec filtres
+- formulaire de réservation
+- contact direct via WhatsApp
+- interface responsive
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Structure
+- `src/App.tsx` : structure principale
+- `src/pages/home.tsx` : page d’accueil
+- `src/components/` : composants UI
+- `src/elements/data.ts` : contenus et données du restaurant
+- `src/styles/` : styles
 
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+## Démarrage
+```bash
+npm install
+npm run dev
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Objectif
+Mettre en valeur City Diet, améliorer sa visibilité locale et convertir les visiteurs en réservations.
