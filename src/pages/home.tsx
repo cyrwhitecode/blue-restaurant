@@ -7,10 +7,10 @@ import { Specialities } from '../components/specialities';
 import { Contact } from '../components/contact';
 import { whatsapp } from '../elements/whatsapp';
 import { Album } from '../components/album';
+import { phone } from '../elements/contact';
 
 export function Home () {
 
-    const phone = 237692640882;
     const message = 'Bonjour, je suis interesse par vos services.'
 
     return (
@@ -33,7 +33,7 @@ export function Home () {
             </div>
             <div id='whatsApp'>
                 <a className='float'
-                   href={whatsapp(phone, message)}
+                   href={whatsapp(Number(phone), message)}
                    target='_blank'
                    rel='noopener noreferrer'>
                     WhatsApp

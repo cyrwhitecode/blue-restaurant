@@ -99,7 +99,6 @@ label input, select {
 }
 label input:focus, select:focus {
     box-shadow: 0 0 3px white;
-
 }
 label input:hover, select:hover {
     box-shadow: 0 0 3px white;
@@ -124,9 +123,7 @@ option { color: gray; }
 .error-container span { 
     color: red; 
     font-style: italic;
-    background-color: rgba(18, 18, 18, 0.642);
-    padding: 10px;
-    font-size: 11px;
+    font-size: 12px;
     border-radius: 5px;
     width: 100%;
     @media (width > 576px) {
