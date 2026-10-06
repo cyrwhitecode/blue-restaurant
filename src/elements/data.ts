@@ -60,7 +60,7 @@ export const adress2: string = "Descente Lycée de Biyem-Assi, Yaoundé.";
 // Ville et pays affichés dans le pied de page.
 export const town: string = "Yaoundé, Cameroun";
 // Numéro WhatsApp au format international, sans signe « + » ni espaces.
-export const phone: string = "237677469872";
+export const phone: string = "237657860713";
 // Numéro de téléphone affiché aux visiteurs.
 export const phone2: string = "+237 6 57 86 07 13 / 6 77 46 98 72";
 // Adresse e-mail de contact.
