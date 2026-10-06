@@ -8,12 +8,12 @@ export function Hero () {
             <div className="craft">
                 <div className="craft-elt">
                     <p>Depuis 2018</p>
-                    <h2>Salles - Terasse - Bar</h2>
+                    <h2>Salles - Terrasse - Bar</h2>
                 </div>
             </div>
             <div className="hero-pres">
                 <div>
-                    <div className="mark-hero"><span></span>Restaurant a yaounde</div>
+                    <div className="mark-hero"><span></span>Restaurant à Yaoundé</div>
                     <h1 className="slogan">{slogan}</h1>
                 </div>
                 <div className="hero-btn">

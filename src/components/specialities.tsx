@@ -24,7 +24,7 @@ export function Specialities () {
 
     return (
         <div className="specialities-main-container">
-            <h2>Nos Specialites</h2>
+            <h2>Nos spécialités</h2>
             <div className="specialities-second-container">
                 <div className="specialities-container">
                     <button className={shawamaStyle()} onClick={() => setActiveFilter("shawama")}>Shawarma</button>

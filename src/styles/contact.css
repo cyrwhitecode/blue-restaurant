@@ -26,9 +26,12 @@
 }
 
 .sub p {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     font-family: 'Fraunces', serif;
+    @media (width > 576px) {
+        font-size: 20px;
+    }
 }
 
 .contact-container .title {
@@ -121,9 +124,12 @@ option { color: gray; }
 .error-container span { 
     color: red; 
     font-style: italic;
-    background-color: rgba(128, 128, 128, 0.299);
+    background-color: rgba(18, 18, 18, 0.642);
     padding: 10px;
-    font-size: 12px;
-    border-radius: 10px;
+    font-size: 11px;
+    border-radius: 5px;
     width: 100%;
+    @media (width > 576px) {
+        font-size: 14px;
+    }
 }

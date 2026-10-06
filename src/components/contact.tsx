@@ -1,5 +1,5 @@
 import { useState } from "react";
-import {  adress2, phone, text } from "../elements/contact";
+import {  adress2, phone, phone2, text } from "../elements/contact";
 import '../styles/contact.css'
 import { whatsapp } from "../elements/whatsapp";
 import type { SyntheticEvent } from "react";
@@ -13,13 +13,13 @@ export function Contact () {
     const [hour, setHour] = useState<string>("")
     const [places, setPlaces] = useState<string>("")
     const [error, setError] = useState<string>("")
-    const message = `Bonjour, je m'appelle ${name}, \n Mon numero est le ${clientPhone.replaceAll(" ", "")}.\n\n Je souhaite reserver une table pour ${places} personne(s) le ${date} a ${hour}.\n Merci et bonne journee.`
+    const message = `Bonjour, je m'appelle ${name}, \n Mon numéro est le ${clientPhone.replaceAll(" ", "")}.\n\n Je souhaite réserver une table pour ${places} personne(s) le ${date} à ${hour}.\n Merci et bonne journée.`
 
 
     const handleSubmit = (e: SyntheticEvent) => {
         e.preventDefault();
         if (!name || !date || !phone || !hour || !places) {
-            setError("Veillez remplir tous les champs correctement !!")
+            setError("Veuillez remplir tous les champs correctement !")
             return
         } 
         window.open(whatsapp(Number(phone), message), "_blank")
@@ -36,7 +36,7 @@ export function Contact () {
         <div className="contact-container">
             <div className="info-bloc">
                 <div className="start-bloc">
-                    <h1>Reserver une Table</h1>
+                    <h1>Réserver une table</h1>
                     <p>{text}</p>
                 </div>
                 <div className="adress sub">
@@ -44,15 +44,15 @@ export function Contact () {
                     <p>{adress2}</p>
                 </div>
                 <div className="phone sub">
-                    <div className="title">Telephone</div>
-                    <p>{phone}</p>
+                    <div className="title">Téléphone</div>
+                    <p>{phone2}</p>
                 </div>
             </div>
 
             <form onSubmit={handleSubmit} className="form">
                 <div className="form-input">
                     <label>Nom <input value={name} onChange={(e) => setName(e.target.value)} type="text" placeholder="Votre nom" /></label>
-                    <label>Telephone <input value={clientPhone} onChange={(e) => setClientPhone(e.target.value)} type="text" placeholder="237 6 XX XX XX XX" /></label>
+                    <label>Téléphone <input value={clientPhone} onChange={(e) => setClientPhone(e.target.value)} type="text" placeholder="237 6 XX XX XX XX" /></label>
                     <label>Date <input value={date} onChange={(e) => setDate(e.target.value)} type="date" placeholder="Date" /></label>
                     <label>Heure <input value={hour} onChange={(e) => setHour(e.target.value)} type="time" placeholder="Heure de passage" /></label>
                     <label>Places 
@@ -65,7 +65,7 @@ export function Contact () {
                         </select>
                     </label>
                 </div>
-                <button type="submit">Confirmer la reservation</button>
+                <button type="submit">Confirmer la réservation</button>
                 <div className="error-container">
                     {error === ""? null: (<span>{error}</span>)}
                 </div>

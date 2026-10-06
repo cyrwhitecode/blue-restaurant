@@ -9,8 +9,8 @@ export function Album () {
             <p className='album-description'>{albumDescription}</p>
             <div className="album-container">
                 <div className="one"><span>La Salle</span></div>
-                <div className="two"><span>La bar</span></div>
-                <div className="three"><span>La terasse</span></div>
+                <div className="two"><span>Le bar</span></div>
+                <div className="three"><span>La terrasse</span></div>
                 <div className="four"><span>La cave</span></div>
             </div>
         </div>

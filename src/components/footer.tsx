@@ -20,7 +20,7 @@ export const Footer = () => {
                     <h3>Navigation</h3>
                     <div className="footer-links">
                         <a href="/">Accueil</a>
-                        <a href="#about">A propos</a>
+                        <a href="#about">À propos</a>
                         <a href="#services">Services</a>
                         <a href="#album">Album</a>
                         <a href="#contact">Contact</a>
@@ -35,7 +35,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="end-bloc">
-                <p>Restaurant City Diet . Yaounde</p>
+                <p>Restaurant City Diet . Yaoundé</p>
                 <p>Site conçu par Cyr.</p>
             </div>
         </div>
