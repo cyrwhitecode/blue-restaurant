@@ -1,9 +1,9 @@
-# City Diet
+# TRAVOURS LOUNGE RESTAURANT 
 
 Site vitrine pour un restaurant local à Yaoundé, conçu pour présenter l’établissement, ses services, ses spécialités et faciliter les réservations via WhatsApp.
 
 ## Démo
-Lien de la demo:(demo-netlify)[https://citydiet.netlify.app]
+Lien de la demo:(demo-netlify)[https://travours-lounge-resto.netlify.app]
 
 ## Technologie
 - React 19
