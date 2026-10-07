@@ -3,14 +3,14 @@
     flex-direction: column;
     gap: 25px;
     padding: 50px 8% 40px 8%;
-    background:  linear-gradient(rgba(131, 235, 202, 0.192), white 50%);
+    background: linear-gradient(rgba(16, 33, 59, 0.095), #6e67b91a 60%);
     @media (width > 576px) {
         padding: 50px 5% 40px 5%;
     }
 }
 
 .specialities-main-container h2 {
-    color: rgb(0, 102, 0);
+    color: var(--navy);
 }
 
 .specialities-second-container {
@@ -47,13 +47,13 @@
 }
 
 .no-active {
-    color: green;
-    border: solid 2px rgba(0, 128, 0, 0.251);
+    color: var(--navy);
+    border: solid 1px rgba(16, 33, 59, 0.3);
     background-color: transparent;
     transition: 0.4s ease-in-out;
 }
 .active-filter {
-    background-color: rgb(219, 0, 0);
+    background-color: var(--red);
     border: none;
     transition: 0.3s ease-in-out;
     color: white;
@@ -74,11 +74,26 @@
     flex-direction: column;
     border-bottom: solid 1px rgba(128, 128, 128, 0.164);
     padding: 5px 0 10px 0;
+    gap: 10px;
     @media (width > 576px) {
         min-width: 30%;
         border-bottom: solid 2px rgba(128, 128, 128, 0.236);
     }
 }
+
+.dish-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+    background:  linear-gradient(145deg, var(--navy), black);
+    @media (width > 576px) {
+        width: 100%;
+        min-height: 180px;
+    }
+}
+
 .first-line {
     display: flex;
     justify-content: space-between;
@@ -86,14 +101,14 @@
 }
 
 .first-line h3 { 
-    color: rgb(1, 108, 1); 
+    color: var(--navy); 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
     @media (width > 576px) {
         font-size: 16px;
     }
 }
 .price { 
-    color: rgb(212, 0, 0); 
+    color: var(--red); 
     font-weight: 700; 
     font-family: fantasy; 
     font-size: 12px;

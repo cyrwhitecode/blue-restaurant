@@ -1,4 +1,4 @@
-import { contactBtnText, servBtnText, slogan } from "../elements/data"
+import { restaurantName, restaurantType, city, openingStatus, closingTime } from "../elements/infos"
 import '../styles/hero.css'
 
 export function Hero () {
@@ -7,21 +7,21 @@ export function Hero () {
         <div className="hero-container">
             <div className="craft">
                 <div className="craft-elt">
-                    <p>Depuis 2018</p>
-                    <h2>Salles - Terrasse - Bar</h2>
+                    <p>{openingStatus}</p>
+                    <h2>{restaurantType} • {city}</h2>
                 </div>
             </div>
             <div className="hero-pres">
                 <div>
-                    <div className="mark-hero"><span></span>Restaurant à Yaoundé</div>
-                    <h1 className="slogan">{slogan}</h1>
+                    <div className="mark-hero"><span></span>{restaurantName}</div>
+                    <h1 className="slogan">{restaurantName} • {openingStatus} jusqu’à {closingTime}</h1>
                 </div>
                 <div className="hero-btn">
                     <button className="serv-btn">
-                        <a href="#services">{servBtnText}</a>
+                        <a href="#services">Découvrez nos services</a>
                     </button>
                     <button className="hero-contact-btn">
-                        <a href="#contact">{contactBtnText}</a>
+                        <a href="#contact">Nous contacter</a>
                     </button>
                 </div>
             </div>

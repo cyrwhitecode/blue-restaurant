@@ -1,5 +1,4 @@
-import { town, phone, adress, email } from "../elements/data"
-import { restaurantName } from "../elements/data"
+import { city, address, phoneDisplay, restaurantName } from "../elements/infos"
 import '../styles/footer.css'
 
 export const Footer = () => {
@@ -10,10 +9,10 @@ export const Footer = () => {
                 <div className="footer-infos">
                     <h3>{restaurantName}</h3>
                     <div className="mark">
-                        <p>{adress}</p>
-                        <p>{town}</p>
-                        <p>{phone}</p>
-                        <p>{email}</p>
+                        <p>{address}</p>
+                        <p>{city}</p>
+                        <p>{phoneDisplay}</p>
+                        <p>travourslounge@gmail.com</p>
                     </div>
                 </div>
                 <div className="footer-navigation">
@@ -35,7 +34,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="end-bloc">
-                <p>Restaurant City Diet . Yaoundé</p>
+                <p>{restaurantName} · {city}</p>
                 <p>Site conçu par Cyr.</p>
             </div>
         </div>

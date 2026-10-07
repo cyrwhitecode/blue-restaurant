@@ -3,7 +3,7 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    background: rgba(222, 220, 220, 0.297);
+    background: var(--surface);
     width: 100%;
     box-sizing: border-box;
     @media (width > 576px) {
@@ -25,54 +25,56 @@
     }
 }
 .album-main-container h2 {
-    color: rgb(1, 110, 1);
+    color: var(--navy);
 }
 
 .album-main-container p {
     font-style: italic;
     font-family: 'Times New Roman', Times, serif;
-    color: rgb(0, 77, 0);
+    color: var(--muted);
     @media (width > 576px) {
         font-size: 15px;
     }
 }
 
-.one {
-    grid-area: one;
-    background: linear-gradient(145deg, rgb(0, 96, 0), rgb(1, 36, 1));
-    @media (width > 576px) {
-        min-height: 100%;
-    }
-}
-.two {
-    grid-area: two;
-    background: linear-gradient(145deg, rgb(168, 1, 1), rgb(15, 0, 0));
-}
-.three {
-    grid-area: three;
-    background: linear-gradient(145deg, rgb(218, 218, 218), rgb(150, 150, 149));
-}
-.four {
-    grid-area: four;
-    background: linear-gradient(145deg, rgb(28, 0, 63), rgb(2, 0, 10));
-}
-
-.one, .two, .three, .four {
+.album-item {
     min-width: 70px;
     position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 12px;
 }
-.two, .three {
-    height: 150px;
-} 
-.one, .four {
-    height: 150px;
-} 
+
+.item-1 { grid-area: one; }
+.item-2 { grid-area: two; }
+.item-3 { grid-area: three; }
+.item-4 { grid-area: four; }
+
+.item-1, .item-4 {
+    height: 180px;
+}
+@media (width > 576px) {
+    .item-1 { min-height: 100%; }
+}
+.item-2, .item-3 {
+    height: 160px;
+}
+
+.album-item::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.7), rgba(0,0,0,0.15));
+}
 
 .album-container span {
     color: white;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
     position: absolute;
-    bottom: 5px;
-    left: 10px;
+    bottom: 10px;
+    left: 12px;
+    z-index: 1;
 }

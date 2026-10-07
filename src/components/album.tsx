@@ -1,17 +1,22 @@
 import '../styles/album.css'
-import { albumDescription } from '../elements/data'
+import { galleryImages } from '../elements/infos'
 
 export function Album () {
 
     return (
         <div className="album-main-container">
-            <h2>Album</h2>
-            <p className='album-description'>{albumDescription}</p>
+            <h2>Galerie</h2>
+            <p className='album-description'>Un aperçu de l’ambiance, des plats et des espaces du restaurant.</p>
             <div className="album-container">
-                <div className="one"><span>La Salle</span></div>
-                <div className="two"><span>Le bar</span></div>
-                <div className="three"><span>La terrasse</span></div>
-                <div className="four"><span>La cave</span></div>
+                {galleryImages.map((item, index) => (
+                    <div
+                        key={`${item.title}-${index}`}
+                        className={`album-item item-${index + 1}`}
+                        style={{ backgroundImage: `url(${item.photo})` }}
+                    >
+                        <span>{item.title}</span>
+                    </div>
+                ))}
             </div>
         </div>
     )

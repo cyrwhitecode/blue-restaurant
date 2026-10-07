@@ -17,13 +17,14 @@ body {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background-color: rgba(175, 173, 173, 0.138);
-    backdrop-filter: blur(1px);
-    -webkit-backdrop-filter: blur(1px);
+    background-color: rgba(255, 255, 255, 0.94);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--border);
 }
 
 .logo {
-    color: rgb(0, 0, 0);
+    color: var(--navy);
     font-size: 24px;
     font-family: 'Times New Roman', Times, serif;
     font-style: italic;
@@ -44,7 +45,7 @@ body {
 .desk-menu .desk-reservation {
     padding: 5px 20px;
     margin-top: 10px;
-    background: rgb(209, 35, 35);
+    background: var(--red);
     border: none;
     border-radius: 20px;
     color: white;
@@ -76,8 +77,8 @@ body {
     top: 54px;
     width: 100%;
     padding: 20px 0 20px 20px;
-    background-color: rgb(253, 253, 253);
-    border-bottom: solid 1px rgb(199, 199, 199);
+    background-color: #ffffff;
+    border-bottom: solid 1px var(--border);
     z-index: 4;
     @media ( width > 576px ) {
         display: none;
@@ -99,7 +100,7 @@ body {
 }
 
 .header-container a {
-    color: black;
+    color: var(--navy);
     text-decoration: none;
     @media ( width < 1024px ) {
         padding: 5px;
@@ -107,8 +108,8 @@ body {
     transition: 0.2s ease-in-out;
 }
 .active {
-    color: rgb(1, 1, 183);
-    border-bottom: solid 2px rgba(255, 0, 0, 0.941);
+    color: var(--navy);
+    border-bottom: solid 2px var(--red);
     font-weight: bolder;
     border-bottom-left-radius: 9px;
     transition: 0.2s ease-in-out;
@@ -116,18 +117,18 @@ body {
 .header-container .reservation {
     padding: 5px 20px;
     margin-top: 20px;
-    background: rgb(209, 35, 35);
+    background: var(--red);
     border-radius: 2px;
     border: none;
     color: white;
 }
 .reservation:hover, .desk-reservation:hover {
-    background: rgba(255, 0, 0, 0.829);
+    background: var(--red-bright);
 }
 
 .menu-btn {
     z-index: 7;
-    color: black;
+    color: var(--navy);
     background-color: transparent;
     border: none;
     font-weight: bolder;

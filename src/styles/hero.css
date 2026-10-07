@@ -17,7 +17,7 @@
 
 .craft {
     padding: 170px 0px;
-    background: linear-gradient(145deg, rgb(219, 0, 0), rgb(139, 0, 0) 30%, green);
+    background: linear-gradient(145deg, rgb(234, 0, 0), var(--navy-deep) 60%, #172b4b);
     border-radius: 4px;
     position: relative;
     max-width: 100%;
@@ -59,12 +59,12 @@
     left: 15px;
     top: 11px;
     padding: 4px 4px;
-    background-color: rgb(3, 185, 3);
+    background-color: var(--red);
     border-radius: 50%;
 }
 
 .slogan {
-    color: rgb(0, 59, 33);
+    color: var(--navy);
 }
 
 .hero-btn {
@@ -81,7 +81,7 @@
     padding: 10px 15px;
     border-radius: 20px;
     border: none;
-    background-color: rgb(0, 59, 33);
+    background-color: var(--navy);
     transition: 0.3s ease-in-out;
     @media (width > 576px) {
         padding: 15px 25px;
@@ -100,10 +100,10 @@
 }
 .hero-contact-btn a {
     text-decoration: none;
-    color: rgb(193, 9, 9);
+    color: var(--red);
     font-weight: 500;
     padding: 10px 15px;
-    border: solid 2px rgb(217, 17, 17);
+    border: solid 2px var(--red);
     border-radius: 20px;
 }
 

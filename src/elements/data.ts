@@ -273,13 +273,34 @@ export const Grillade: specialityType[] = [
 
 // Photos et légendes des éléments de l'album.
 export const album: albumType[] = [
-    { title: "room", photo: "/citydiet_img/convivial2.jpg" },
-    { title: "kitchen", photo: "/citydiet_img/persoqualif2.jpg" },
-    { title: "plate", photo: "/citydiet_img/koki1.jpg" },
-    { title: "dessert", photo: "/citydiet_img/coupe3.jpg" },
-    { title: "pianobar", photo: "/citydiet_img/pianobar2.jpg" },
-    { title: "personal", photo: "/citydiet_img/convivial1.jpg" },
-    { title: "event", photo: "/citydiet_img/celebrations.jpg" },
+    {
+        title: "La salle",
+        photo: "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RwTgOgrlaXZ2q3iQtBDPU_3ctRBe5rYTpO8vGTEhNF2tSnLwTc-icDOQ8SzmlfsrE6Y956jwh4FchrkEw6WlMlkIfORBjodQ6bRf-yJc6TkbAno5y3r1dbFqRY6sFuqcGTGTk=w397-h298-k-no",
+    },
+    {
+        title: "Le menu",
+        photo: "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNzVbEVWZyn5MHIrleJjF1QuJkwINqUdaZIzF2nq69A5awaD5W_7xNg-L5Uv7QSXDL4PUqXMbVMVu5Lvt5nuRhJvJgJzr6g0SxvMTduhfUHBhBx0zdV01ayk0MoLHnMOs9opjx=w168-h168-p-k-no",
+    },
+    {
+        title: "Le plat",
+        photo: "https://lh3.googleusercontent.com/grass-cs/ACvplmNhzAQQWcdmUt7uayN7x7a2RPwXpND3vO4S5kGeuST6A65Stbk12XzbfkmB5VToSIG-gQpfcZgIUj4ucRbKLBX_X5Z9CXJ7GPR6oEhNB_b_SnjqF1lFkduDwt8CbHdMmGEO23Zw=w168-h168-p-k-no",
+    },
+    {
+        title: "Ambiance",
+        photo: "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SCuazcBOw9JCZiqtfwQbOmMvtcI4eJi4nlwU9jMcys9KM7n0pgDHUm0xUSqCGnj2pfMO_48u-vM9_UTpalKPP8Y08JJEryyLbWZ6qZQ-CXyp6Wqq8tbUVQVueu-PhoiBaKbn8=w529-h298-k-no",
+    },
+    {
+        title: "Desserts",
+        photo: "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TjdQKW1gX3o57cweZDtoMeT64tc5fQbaYC1VCjqbhTUC1Np8ikNFNXfUKvjlFxZeGqvnPMxgf2Mao9lDiJdOLU8Dj_QQJIFO24mF_Ls_a9ptJLoC-Ud_uJeuvYctcWVfu0py50Kg=w554-h298-k-no",
+    },
+    {
+        title: "Resto",
+        photo: "https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TgOgrlaXZ2q3iQtBDPU_3ctRBe5rYTpO8vGTEhNF2tSnLwTc-icDOQ8SzmlfsrE6Y956jwh4FchrkEw6WlMlkIfORBjodQ6bRf-yJc6TkbAno5y3r1dbFqRY6sFuqcGTGTk=w397-h298-k-no",
+    },
+    {
+        title: "Spécialités",
+        photo: "https://lh3.googleusercontent.com/grass-cs/ACvplmMWCEIe7DzaX5jR4iN35rc2uIoKJ0vnaZD2-yhB3083vz3N6lSmoM72RKa39fEvTJJjwUSKXBlD3U2APU84DC5uYQs3Q86dweKlVobnlkCahgkJZtzddSiT14x7fBhkQ5cbzYlj=w258-h336-p-k-no",
+    },
 ];
 
 // Texte introductif affiché au-dessus de l'album.

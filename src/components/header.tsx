@@ -1,4 +1,4 @@
-import { restaurantName } from '../elements/data';
+import { restaurantName } from '../elements/infos';
 import '../styles/header.css'
 
 export const Header = ({ 

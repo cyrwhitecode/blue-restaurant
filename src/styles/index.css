@@ -5,15 +5,22 @@ html {
 }
 
 :root {
-  --text: #6b6375;
-  --bg: #fff;
-  --border: #e5e4e7;
+  --navy: #10213b;
+  --navy-deep: #09162a;
+  --red: #b42336;
+  --green: green;
+  --red-bright: #cf3547;
+  --text: #344156;
+  --muted: #667085;
+  --bg: #ffffff;
+  --surface: #f5f7fa;
+  --border: #e1e6ed;
 
   --sans: system-ui, 'Segoe UI', Roboto, sans-serif;
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
-  color-scheme: light dark;
+  color-scheme: light;
   color: var(--text);
   background: var(--bg);
   font-synthesis: none;
