@@ -36,4 +36,4 @@ npm run dev
 ```
 
 ## Objectif
-Mettre en valeur City Diet, améliorer sa visibilité locale et convertir les visiteurs en réservations.
+Mettre en valeur City Diet, améliorer sa visibilité locale et convertir les visiteurs en réservations."# blue-restaurant" 
